@@ -1,7 +1,8 @@
 require('dotenv').config();
 const express = require('express');
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch'); ❌ kaldır bunu
 const cors = require('cors');
+
 
 const app = express();
 
