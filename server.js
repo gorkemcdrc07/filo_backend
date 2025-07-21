@@ -10,7 +10,7 @@ const allowedOrigins = [
     'https://fts-psi.vercel.app',
     'https://fts-git-main-gorkems-projects-f9c4a0e9.vercel.app',
     'https://fts-ya39ieb0j-gorkems-projects-f9c4a0e9.vercel.app',
-    'https://fts-84mb.onrender.com',
+    'https://filo-backend-57wx.onrender.com',
     'http://localhost:3000'
 ];
 
