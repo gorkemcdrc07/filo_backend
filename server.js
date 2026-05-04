@@ -12,9 +12,9 @@ const allowedOrigins = [
     'https://fts-git-main-gorkems-projects-f9c4a0e9.vercel.app',
     'https://fts-ya39ieb0j-gorkems-projects-f9c4a0e9.vercel.app',
     'https://filo-backend-57wx.onrender.com',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'http://localhost:5173'
 ];
-
 app.use(cors({
     origin: function (origin, callback) {
         if (!origin) return callback(null, true); // Postman gibi araçlara izin
