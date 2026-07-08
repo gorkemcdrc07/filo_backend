@@ -63,6 +63,12 @@ app.post('/api/proxy/tmsdespatches', async (req, res) => {
             console.error('JSON parse hatası:', e);
             return res.status(500).json({ error: 'Geçersiz JSON yanıtı' });
         }
+        const types = [...new Set(
+            (data?.Data || []).map(x => x?.VehicleWorkingTypeName).filter(Boolean)
+        )];
+
+        console.log("VehicleWorkingTypeName değerleri:", types);
+        console.log("Toplam kayıt:", data?.Data?.length || 0);
 
         res.json(data);
     } catch (error) {
